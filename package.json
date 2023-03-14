@@ -1,7 +1,7 @@
 {
   "name": "tattoo",
   "version": "0.1.0",
-  "homepage": "https://github.com/maxshnaider/Tattoo_proj",
+  "homepage": "https://maxshnaider.github.io/Tattoo_proj/",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
