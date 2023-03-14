@@ -1,0 +1,155 @@
+@media screen and (max-width: 1400px) {
+  // .gallery_about {
+  //   flex-direction: column;
+  // }
+
+  // .about_gal_right {
+  //   margin-top: 30px;
+  //   display: flex;
+  //   justify-content: space-between;
+  // }
+}
+
+@media screen and (max-width: 1200px) {
+  .reviews_slider {
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  .artist_container {
+    .slick-slider {
+      .artist_item {
+        padding: 0 50px;
+        .artist_img {
+          width: 100%;
+        }
+      }
+    }
+  }
+
+  .reviews_slider {
+    .slick-slider {
+      .reviews_item {
+        padding: 0 50px;
+        .reviews_img img {
+          width: 100%;
+        }
+      }
+    }
+  }
+
+  .artist_page_info {
+    .text2 {
+      display: none;
+    }
+  }
+}
+
+@media screen and (max-width: 920px) {
+  .foot_flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .foot_right {
+    width: 445px;
+  }
+
+  .artist_container {
+    .slick-slider {
+      .artist_item {
+        padding: 0 20px;
+      }
+    }
+  }
+
+  .reviews_slider {
+    .slick-slider {
+      .reviews_item {
+        padding: 0 20px;
+      }
+    }
+  }
+
+  .head_section .container {
+    text-align: center;
+  }
+
+  .circle {
+    &::after {
+      width: 445px;
+    }
+  }
+
+  .artist_page_item {
+    flex-direction: column;
+  }
+
+  .btn_artist {
+    display: none;
+  }
+
+  .btn_artist_resp {
+    display: block;
+    margin: 0 auto;
+  }
+
+  .artist_page_info h2 {
+    text-align: center;
+  }
+
+  .artist_photo {
+    text-align: center;
+  }
+
+  // .artist_photo img{
+  //   width: 100%;
+  // }
+}
+
+@media screen and (max-width: 768px) {
+  #ham_btn {
+    display: block;
+  }
+
+  .nav {
+    display: none;
+  }
+
+  .about_us_flex {
+    flex-direction: column;
+    padding-bottom: 30px;
+  }
+  .about_us_left {
+    max-width: 100%;
+  }
+  .btn_about_res {
+    margin-bottom: 80px;
+    display: block;
+  }
+  .btn_about {
+    display: none;
+  }
+  .error {
+    div:nth-child(1) {
+      font-size: 100px;
+      line-height: 110px;
+    }
+    div:nth-child(2) {
+      font-size: 50px;
+      line-height: 65px;
+    }
+    div:nth-child(3) {
+      font-size: 25px;
+      line-height: 30px;
+      margin-bottom: 30px;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .artist_photo img {
+    width: 480px;
+  }
+}
