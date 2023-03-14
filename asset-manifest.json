@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Tattoo_proj/static/css/main.4900a603.css",
-    "main.js": "/Tattoo_proj/static/js/main.a6c7dd09.js",
+    "main.js": "/Tattoo_proj/static/js/main.104e26fc.js",
     "static/media/bg_artists_page.png": "/Tattoo_proj/static/media/bg_artists_page.a0e3b213cdb7f350941e.png",
     "static/media/bg_page_about_us.png": "/Tattoo_proj/static/media/bg_page_about_us.26fff3f2dd5405ec6527.png",
     "static/media/bg2_3.png": "/Tattoo_proj/static/media/bg2_3.126347b2dc99ec418d3f.png",
@@ -59,10 +59,10 @@
     "static/media/slick.woff": "/Tattoo_proj/static/media/slick.295183786cd8a1389865.woff",
     "static/media/marker.svg": "/Tattoo_proj/static/media/marker.469d5542ad0ab139ec25d4bf7707604c.svg",
     "main.4900a603.css.map": "/Tattoo_proj/static/css/main.4900a603.css.map",
-    "main.a6c7dd09.js.map": "/Tattoo_proj/static/js/main.a6c7dd09.js.map"
+    "main.104e26fc.js.map": "/Tattoo_proj/static/js/main.104e26fc.js.map"
   },
   "entrypoints": [
     "static/css/main.4900a603.css",
-    "static/js/main.a6c7dd09.js"
+    "static/js/main.104e26fc.js"
   ]
 }
