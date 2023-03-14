@@ -153,3 +153,9 @@
     width: 480px;
   }
 }
+
+@media screen and (max-width: 480px) {
+  .form_row {
+    width: 350px;
+  }
+}
