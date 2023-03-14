@@ -21,7 +21,7 @@ function NickHoltPage() {
           <div className="container">
             <div className="artist_page_item reverse">
               <div className="artist_page_info animate__animated animate__slideInRight">
-                <Atropos shadow={false} highlight={false}>
+                <Atropos shadow={false} highlight={false} rotateTouch={false}>
                   <h2 className="title_h2">Nick Holt</h2>
                 </Atropos>
                 <p className="text1">

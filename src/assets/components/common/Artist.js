@@ -38,7 +38,7 @@ function Artist() {
       <AnimationOnScroll animateIn="animate__fadeInUp" animateOnce={true}>
         <div className="container artist">
           <h2 className="title_h2">
-            <Atropos shadow={false} highlight={false}>
+            <Atropos shadow={false} highlight={false} rotateTouch={false}>
               Our Artists
             </Atropos>
           </h2>
@@ -46,7 +46,7 @@ function Artist() {
           <div className="artist_container">
             <Slider {...settings}>
               <div className="artist_item">
-                <Atropos shadow={false} highlight={false}>
+                <Atropos shadow={false} highlight={false} rotateTouch={false}>
                   <div className="artist_img terry_card">
                     <div className="book">
                       <span className="icon-arrow-right2"></span>
@@ -62,7 +62,7 @@ function Artist() {
               </div>
 
               <div className="artist_item">
-                <Atropos>
+                <Atropos rotateTouch={false}>
                   <div className="artist_img nick_card">
                     <div className="book">
                       <span className="icon-arrow-right2"></span>
@@ -76,7 +76,7 @@ function Artist() {
                 <p>Work experience: 10 years</p>
               </div>
               <div className="artist_item">
-                <Atropos>
+                <Atropos rotateTouch={false}>
                   <div className="artist_img sandra_card">
                     <div className="book">
                       <span className="icon-arrow-right2"></span>

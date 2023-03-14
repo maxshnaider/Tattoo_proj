@@ -23,7 +23,7 @@ function Artists() {
           <div className="container">
             <div className="artist_page_item">
               <div className="artist_page_info animate__animated animate__slideInLeft">
-                <Atropos shadow={false} highlight={false}>
+                <Atropos shadow={false} highlight={false} rotateTouch={false}>
                   <h2 className="title_h2">Terry Dutra</h2>
                 </Atropos>
                 <p className="text1">
@@ -48,7 +48,7 @@ function Artists() {
                 </Link>
               </div>
               <div className="artist_photo animate__animated animate__slideInRight">
-                <Atropos shadow={false} highlight={false}>
+                <Atropos shadow={false} highlight={false} rotateTouch={false}>
                   <LazyLoad height={648} offset={100}>
                     <img src={terry_img} alt="terry_master" />
                   </LazyLoad>
@@ -66,7 +66,7 @@ function Artists() {
                 animateOnce={true}
               >
                 <div className="artist_page_info">
-                  <Atropos shadow={false} highlight={false}>
+                  <Atropos shadow={false} highlight={false} rotateTouch={false}>
                     <h2 className="title_h2">Nick Holt</h2>
                   </Atropos>
                   <p className="text1">
@@ -94,7 +94,7 @@ function Artists() {
                 animateOnce={true}
               >
                 <div className="artist_photo">
-                  <Atropos shadow={false} highlight={false}>
+                  <Atropos shadow={false} highlight={false} rotateTouch={false}>
                     <LazyLoad height={648} offset={100}>
                       <img src={nick_img} alt="nick_master" />
                     </LazyLoad>
@@ -113,7 +113,7 @@ function Artists() {
                 animateOnce={true}
               >
                 <div className="artist_page_info">
-                  <Atropos shadow={false} highlight={false}>
+                  <Atropos shadow={false} highlight={false} rotateTouch={false}>
                     <h2 className="title_h2">Sandra</h2>
                   </Atropos>
                   <p className="text1">
@@ -141,7 +141,7 @@ function Artists() {
                 animateOnce={true}
               >
                 <div className="artist_photo">
-                  <Atropos shadow={false} highlight={false}>
+                  <Atropos shadow={false} highlight={false} rotateTouch={false}>
                     <LazyLoad height={648} offset={100}>
                       <img src={sandra_img} alt="sandra_master" />
                     </LazyLoad>

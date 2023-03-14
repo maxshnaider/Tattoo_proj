@@ -16,7 +16,7 @@ function AboutUs() {
             animateOnce={true}
           >
             <div className="about_us_left">
-              <Atropos shadow={false} highlight={false}>
+              <Atropos shadow={false} highlight={false} rotateTouch={false}>
                 <h2 className="title_h2 title_about">About us</h2>
               </Atropos>
 

@@ -55,7 +55,7 @@ function Reviews() {
         <AnimationOnScroll animateIn="animate__fadeInUp" animateOnce={true}>
           <div className="container">
             <h2 className="title_h2 title_reviews">
-              <Atropos shadow={false} highlight={false}>
+              <Atropos shadow={false} highlight={false} rotateTouch={false}>
                 Our Reviews
               </Atropos>
             </h2>

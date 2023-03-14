@@ -11,7 +11,7 @@ function Care() {
         <AnimationOnScroll animateIn="animate__fadeIn" animateOnce={true}>
           <div className="container">
             <h2 className="title_h2 title_care">
-              <Atropos shadow={false} highlight={false}>
+              <Atropos shadow={false} highlight={false} rotateTouch={false}>
                 Tattoo Care
               </Atropos>
             </h2>

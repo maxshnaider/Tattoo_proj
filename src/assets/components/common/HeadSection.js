@@ -9,7 +9,7 @@ function HeadSection() {
       <section className="head_section">
         <div className="container">
           <h1>
-            <Atropos shadow={false} highlight={false}>
+            <Atropos shadow={false} highlight={false} rotateTouch={false}>
               Custom Concepts <br /> Tattoo and Design
             </Atropos>
           </h1>
