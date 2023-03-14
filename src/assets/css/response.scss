@@ -156,10 +156,23 @@
 
 @media screen and (max-width: 480px) {
   .form_row {
-    width: 350px;
+    max-width: 350px;
   }
   .foot_form_input input,
   .foot_form_input textarea {
-    width: 350px;
+    max-width: 350px;
+  }
+  .btn_foot {
+    max-width: 350px;
+  }
+
+  .circle {
+    &::after {
+      max-width: 350px;
+    }
+  }
+
+  .foot_right {
+    max-width: 350px;
   }
 }
