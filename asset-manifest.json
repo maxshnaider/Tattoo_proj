@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/Tattoo_proj/static/css/main.8421bd06.css",
+    "main.css": "/Tattoo_proj/static/css/main.73c4955b.css",
     "main.js": "/Tattoo_proj/static/js/main.a6c7dd09.js",
     "static/media/bg_artists_page.png": "/Tattoo_proj/static/media/bg_artists_page.a0e3b213cdb7f350941e.png",
     "static/media/bg_page_about_us.png": "/Tattoo_proj/static/media/bg_page_about_us.26fff3f2dd5405ec6527.png",
@@ -58,11 +58,11 @@
     "index.html": "/Tattoo_proj/index.html",
     "static/media/slick.woff": "/Tattoo_proj/static/media/slick.295183786cd8a1389865.woff",
     "static/media/marker.svg": "/Tattoo_proj/static/media/marker.469d5542ad0ab139ec25d4bf7707604c.svg",
-    "main.8421bd06.css.map": "/Tattoo_proj/static/css/main.8421bd06.css.map",
+    "main.73c4955b.css.map": "/Tattoo_proj/static/css/main.73c4955b.css.map",
     "main.a6c7dd09.js.map": "/Tattoo_proj/static/js/main.a6c7dd09.js.map"
   },
   "entrypoints": [
-    "static/css/main.8421bd06.css",
+    "static/css/main.73c4955b.css",
     "static/js/main.a6c7dd09.js"
   ]
 }
