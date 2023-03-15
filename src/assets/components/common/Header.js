@@ -90,7 +90,9 @@ function Header() {
               <ul className="nav_mobile">
                 <li>
                   {/* <a href="/">Home</a> */}
-                  <Link to={"/home"}>Home</Link>
+                  <Link to={"/"} onClick={clickHandler}>
+                    Home
+                  </Link>
                 </li>
                 <li>
                   {/* <a href="#">Artists</a> */}
