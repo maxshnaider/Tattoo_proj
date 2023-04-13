@@ -1,26 +1,26 @@
 {
   "files": {
-    "main.css": "/Tattoo_proj/static/css/main.4900a603.css",
-    "main.js": "/Tattoo_proj/static/js/main.5903b9bc.js",
-    "static/media/bg_artists_page.png": "/Tattoo_proj/static/media/bg_artists_page.a0e3b213cdb7f350941e.png",
-    "static/media/bg_page_about_us.png": "/Tattoo_proj/static/media/bg_page_about_us.26fff3f2dd5405ec6527.png",
-    "static/media/bg2_3.png": "/Tattoo_proj/static/media/bg2_3.126347b2dc99ec418d3f.png",
+    "main.css": "/Tattoo_proj/static/css/main.5db6e3cf.css",
+    "main.js": "/Tattoo_proj/static/js/main.1a9005ef.js",
+    "static/media/bg_artists_page.png": "/Tattoo_proj/static/media/bg_artists_page.3c1031e0400d61bf8b2c.png",
     "static/media/about_us_gall1.png": "/Tattoo_proj/static/media/about_us_gall1.c72d1fec8b90a9f5deaa.png",
-    "static/media/application.png": "/Tattoo_proj/static/media/application.9358bc7f0c8ddce47cca.png",
-    "static/media/about_us_page_first.png": "/Tattoo_proj/static/media/about_us_page_first.c992f6f1d21ddf3c78ba.png",
-    "static/media/bg_head.png": "/Tattoo_proj/static/media/bg_head.95eaa29feb2f071f3d21.png",
-    "static/media/about_us_page_foot.png": "/Tattoo_proj/static/media/about_us_page_foot.553ead051b373b1a59ef.png",
+    "static/media/bg_page_about_us.png": "/Tattoo_proj/static/media/bg_page_about_us.9f3ad14afd038d2ef4d3.png",
     "static/media/about_us_main.png": "/Tattoo_proj/static/media/about_us_main.c6d7cb588e0a8c8daf35.png",
-    "static/media/bg_reviews.png": "/Tattoo_proj/static/media/bg_reviews.8b5a8d5c35cbf72547fd.png",
     "static/media/artist_page_nick.png": "/Tattoo_proj/static/media/artist_page_nick.db10549185edfb5d6f6d.png",
-    "static/media/bg_care.png": "/Tattoo_proj/static/media/bg_care.304cbe7c37df38ab0564.png",
+    "static/media/application.png": "/Tattoo_proj/static/media/application.d242f1dc083e83b6309f.png",
     "static/media/artist_page_sandra.png": "/Tattoo_proj/static/media/artist_page_sandra.630224a97239d768c6d7.png",
+    "static/media/bg2_3.png": "/Tattoo_proj/static/media/bg2_3.7d83be64789beec08d39.png",
     "static/media/artist_page_terry.png": "/Tattoo_proj/static/media/artist_page_terry.1d11dd51c576c4796052.png",
+    "static/media/about_us_page_first.png": "/Tattoo_proj/static/media/about_us_page_first.78528493a2df05186f33.png",
+    "static/media/about_us_page_foot.png": "/Tattoo_proj/static/media/about_us_page_foot.fc3bfb3271623f781fb1.png",
+    "static/media/bg_head.png": "/Tattoo_proj/static/media/bg_head.260d9b9b7c0596db8e79.png",
+    "static/media/bg_reviews.png": "/Tattoo_proj/static/media/bg_reviews.04e0733a5acee3c2e050.png",
     "static/media/artist_nick.png": "/Tattoo_proj/static/media/artist_nick.927864d0afaf645e348b.png",
     "static/media/permanent-marker-v16-latin-regular.svg": "/Tattoo_proj/static/media/permanent-marker-v16-latin-regular.2ac178682f1c87e25a0b.svg",
     "static/media/artist_sandra.png": "/Tattoo_proj/static/media/artist_sandra.5e692d7ec0a83d867435.png",
     "static/media/artist_terry.png": "/Tattoo_proj/static/media/artist_terry.c155cdce6bdbf76437e0.png",
     "static/media/about_us_gall4.png": "/Tattoo_proj/static/media/about_us_gall4.8d6cdf919d552f7eb4b8.png",
+    "static/media/bg_care.png": "/Tattoo_proj/static/media/bg_care.10a97956abfded1a68c8.png",
     "static/media/about_us_gall3.png": "/Tattoo_proj/static/media/about_us_gall3.11a31a7deac5be2348bf.png",
     "static/media/coming-soon-v19-latin-regular.svg": "/Tattoo_proj/static/media/coming-soon-v19-latin-regular.706a8c5fc778b9e0682c.svg",
     "static/media/about_us_gall2.png": "/Tattoo_proj/static/media/about_us_gall2.9a96c96cd52568db56b2.png",
@@ -58,11 +58,11 @@
     "index.html": "/Tattoo_proj/index.html",
     "static/media/slick.woff": "/Tattoo_proj/static/media/slick.295183786cd8a1389865.woff",
     "static/media/marker.svg": "/Tattoo_proj/static/media/marker.469d5542ad0ab139ec25d4bf7707604c.svg",
-    "main.4900a603.css.map": "/Tattoo_proj/static/css/main.4900a603.css.map",
-    "main.5903b9bc.js.map": "/Tattoo_proj/static/js/main.5903b9bc.js.map"
+    "main.5db6e3cf.css.map": "/Tattoo_proj/static/css/main.5db6e3cf.css.map",
+    "main.1a9005ef.js.map": "/Tattoo_proj/static/js/main.1a9005ef.js.map"
   },
   "entrypoints": [
-    "static/css/main.4900a603.css",
-    "static/js/main.5903b9bc.js"
+    "static/css/main.5db6e3cf.css",
+    "static/js/main.1a9005ef.js"
   ]
 }
