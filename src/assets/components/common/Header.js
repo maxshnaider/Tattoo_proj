@@ -1,6 +1,7 @@
 import { Link, useLocation } from "react-router-dom";
 import logo from "./../../img/Logo.png";
 import Atropos from "atropos/react";
+import React, { useRef, useEffect } from "react";
 
 function Header() {
   const pathname = useLocation();
@@ -10,6 +11,36 @@ function Header() {
       window.scrollTo({ top: 0, behavior: "smooth" });
     }
   };
+
+  const menuRef = useRef(null);
+  const btnRef = useRef(null);
+
+  function handleClickOutside(event) {
+    if (
+      menuRef.current &&
+      !menuRef.current.contains(event.target) &&
+      btnRef.current &&
+      !btnRef.current.contains(event.target)
+    ) {
+      closeMenu();
+    }
+  }
+
+  function closeMenu() {
+    document.getElementById("mobile_menu").classList.remove("open");
+    document.getElementById("ham_btn").classList.remove("is-active");
+  }
+
+  useEffect(() => {
+    document.addEventListener("click", handleClickOutside);
+    return () => {
+      document.removeEventListener("click", handleClickOutside);
+    };
+  });
+
+  function handleMenuClick() {
+    closeMenu();
+  }
 
   function toggle() {
     document.getElementById("mobile_menu").classList.toggle("open");
@@ -77,6 +108,7 @@ function Header() {
               </li>
             </ul>
             <button
+              ref={btnRef}
               onClick={toggle}
               className="hamburger hamburger--collapse"
               type="button"
@@ -86,30 +118,40 @@ function Header() {
                 <span className="hamburger-inner"></span>
               </span>
             </button>
-            <div id="mobile_menu">
+            <div id="mobile_menu" ref={menuRef}>
               <ul className="nav_mobile">
                 <li>
                   {/* <a href="/">Home</a> */}
-                  <Link to={"/"} onClick={clickHandler}>
+                  <Link to={"/"} onClick={handleMenuClick}>
                     Home
                   </Link>
                 </li>
                 <li>
                   {/* <a href="#">Artists</a> */}
-                  <Link to={"/artists"}>Artists</Link>
+                  <Link to={"/artists"} onClick={handleMenuClick}>
+                    Artists
+                  </Link>
                 </li>
                 <li>
                   {/* <a href={"/about"}>About us</a> */}
-                  <Link to={"/about"}>About us</Link>
+                  <Link to={"/about"} onClick={handleMenuClick}>
+                    About us
+                  </Link>
                 </li>
                 <li>
-                  <Link to={"/error"}>Care</Link>
+                  <Link to={"/error"} onClick={handleMenuClick}>
+                    Care
+                  </Link>
                 </li>
                 <li>
-                  <Link to={"/error"}>Contact</Link>
+                  <Link to={"/error"} onClick={handleMenuClick}>
+                    Contact
+                  </Link>
                 </li>
                 <li>
-                  <Link to={"/error"}>Reviews</Link>
+                  <Link to={"/error"} onClick={handleMenuClick}>
+                    Reviews
+                  </Link>
                 </li>
               </ul>
             </div>
