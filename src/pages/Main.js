@@ -1,5 +1,4 @@
 import AboutUs from "../assets/components/common/AboutUs";
-// import AboutUsPage from "./assets/components/common/AboutUsPage";
 import Artist from "../assets/components/common/Artist";
 import Care from "../assets/components/common/Care";
 import HeadSection from "../assets/components/common/HeadSection";

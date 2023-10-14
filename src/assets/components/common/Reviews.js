@@ -1,6 +1,5 @@
 import reviewsItems from "../../../data/reviewsItems.json";
 import ReviewsItem from "../ReviewsItem";
-// import React from "react";
 import Slider from "react-slick";
 import React, { useEffect, useRef } from "react";
 import "slick-carousel/slick/slick.css";
@@ -73,21 +72,5 @@ function Reviews() {
     </Parallax>
   );
 }
-
-// function Reviews() {
-//   return (
-//     <section className="reviews">
-//       <div className="container">
-//         <h2 className="title_h2 title_reviews">Our Reviews</h2>
-
-//         <div className="reviews_slider">
-//           {reviewsItems.map((item) => (
-//             <ReviewsItem img={item.img} title={item.title} />
-//           ))}
-//         </div>
-//       </div>
-//     </section>
-//   );
-// }
 
 export default Reviews;

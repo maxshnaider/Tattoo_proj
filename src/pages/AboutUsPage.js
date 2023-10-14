@@ -2,36 +2,18 @@ import img1 from "./../assets/img/about_us_gall1.png";
 import img2 from "./../assets/img/about_us_gall2.png";
 import img3 from "./../assets/img/about_us_gall3.png";
 import img4 from "./../assets/img/about_us_gall4.png";
-
-// import Header from "../assets/components/common/Header";
 import custom_img from "../assets/img/Custom_Concepts.png";
 import tattoo_chair from "../assets/img/about_us_page_first.png";
 import ScrollToTop from "../assets/components/common/ScrollToTop";
-// import FootMain from "../assets/components/common/FootMain";
 import { Parallax } from "react-parallax";
 import bg_about from ".//../assets/img/bg_page_about_us.png";
 import { Link } from "react-router-dom";
 import React from "react";
-// import { useState, useEffect } from "react";
-// import { RiseLoader } from "react-spinners";
 import { AnimationOnScroll } from "react-animation-on-scroll";
 import "atropos/css";
-// import Atropos from "atropos/react";
 
 function AboutUsPage() {
-  // const [loading, setLoading] = useState(true);
 
-  // useEffect(() => {
-  //   setLoading(false); // имитация завершения загрузки
-  // }, []);
-
-  // if (loading) {
-  //   return (
-  //     <div className="spinner-container">
-  //       <RiseLoader />
-  //     </div>
-  //   );
-  // }
   return (
     <Parallax bgImage={bg_about} strength={500}>
       {/* <Header /> */}
@@ -95,18 +77,6 @@ function AboutUsPage() {
                     <img src={img4} alt="tattoo_gallery" />
                   </div>
                 </div>
-                {/* {img.map((el) => {
-                  return (
-                    <div className="gallery_item">
-                      <div>
-                        <img
-                          src={`/assets/img/about_us_page/${el.img}`}
-                          alt="tattoo_photo"
-                        />
-                      </div>
-                    </div>
-                  );
-                })} */}
               </div>
             </AnimationOnScroll>
             <AnimationOnScroll animateIn="animate__zoomIn" animateOnce={true}>

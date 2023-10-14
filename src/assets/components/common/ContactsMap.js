@@ -1,5 +1,4 @@
 import { MapContainer, TileLayer, Popup, Marker } from "react-leaflet";
-// import "leaflet-gesture-handling/dist/leaflet-gesture-handling.css";
 import { GestureHandling } from "leaflet-gesture-handling";
 import "leaflet-gesture-handling/dist/leaflet-gesture-handling.css";
 import "leaflet/dist/leaflet.css";
