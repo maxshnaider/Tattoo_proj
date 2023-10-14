@@ -99,7 +99,7 @@ function Header() {
                 </Link>
               </li>
               <li>
-                <Link to={"/error"}>
+                <Link to={"/reviews"}>
                   {" "}
                   <Atropos shadow={false} highlight={false}>
                     Reviews

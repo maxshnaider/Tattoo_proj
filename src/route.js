@@ -6,6 +6,7 @@ import Artists from "./pages/Artists";
 import Application from "./pages/Application";
 import NickHoltPage from "./pages/NickHoltPage";
 import ErrorPage from "./assets/components/ErrorPage";
+import ReviewsPage from "./pages/ReviewsPage";
 
 const router = createHashRouter([
   {
@@ -31,6 +32,10 @@ const router = createHashRouter([
       {
         path: "nick",
         element: <NickHoltPage />,
+      },
+      {
+        path: "reviews",
+        element: <ReviewsPage />,
       },
     ],
   },
