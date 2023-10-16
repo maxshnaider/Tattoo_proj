@@ -7,6 +7,8 @@ import Application from "./pages/Application";
 import NickHoltPage from "./pages/NickHoltPage";
 import ErrorPage from "./assets/components/ErrorPage";
 import ReviewsPage from "./pages/ReviewsPage";
+import SandraPage from "./pages/SandraPage";
+import TerryDutraPage from "./pages/TerryDutraPage";
 
 const router = createHashRouter([
   {
@@ -32,6 +34,14 @@ const router = createHashRouter([
       {
         path: "nick",
         element: <NickHoltPage />,
+      },
+      {
+        path: "sandra",
+        element: <SandraPage />,
+      },
+      {
+        path: "terry",
+        element: <TerryDutraPage />,
       },
       {
         path: "reviews",
