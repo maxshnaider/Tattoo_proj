@@ -1,56 +1,61 @@
-import { createBrowserRouter } from "react-router-dom";
+import { createHashRouter } from "react-router-dom";
 import App from "./pages/App";
 import Main from "./pages/Main";
 import AboutUsPage from "./pages/AboutUsPage";
 import Artists from "./pages/Artists";
 import Application from "./pages/Application";
-import NickHoltPage from "./pages/NickHoltPage";
 import ErrorPage from "./assets/components/ErrorPage";
 import ReviewsPage from "./pages/ReviewsPage";
-import SandraPage from "./pages/SandraPage";
-import TerryDutraPage from "./pages/TerryDutraPage";
+import ArtistPage from "./pages/ArtistsPage";
 
-const router = createBrowserRouter([
+const router = createHashRouter([
   {
     path: "/",
     element: <App />,
-  },
-  {
-    index: true,
-    element: <Main />,
-  },
-  {
-    path: "about",
-    element: <AboutUsPage />,
-  },
-  {
-    path: "artists",
-    element: <Artists />,
-  },
-  {
-    path: "application",
-    element: <Application />,
-  },
-  {
-    path: "nick",
-    element: <NickHoltPage />,
-  },
-  {
-    path: "sandra",
-    element: <SandraPage />,
-  },
-  {
-    path: "terry",
-    element: <TerryDutraPage />,
-  },
-  {
-    path: "reviews",
-    element: <ReviewsPage />,
+    children: [
+      {
+        index: true,
+        element: <Main />,
+      },
+      {
+        path: "about",
+        element: <AboutUsPage />,
+      },
+      {
+        path: "artists",
+        element: <Artists />,
+      },
+      {
+        path: "application",
+        element: <Application />,
+      },
+      {
+        path: "artists",
+        element: <Artists />,
+      },
+      {
+        path: "artists/:artistName",
+        element: <ArtistPage />,
+      },
+      {
+        path: "reviews",
+        element: <ReviewsPage />,
+      },
+      {
+        path: "error",
+        element: <ErrorPage />,
+      },
+    ],
   },
   {
     path: "error",
     element: <ErrorPage />,
   },
+
+  // {
+  //   path: "/home",
+  //   element: <App />,
+  // },
 ]);
 
 export default router;

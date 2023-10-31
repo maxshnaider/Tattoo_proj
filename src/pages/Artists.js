@@ -42,7 +42,7 @@ function Artists() {
                       </LazyLoad>
                     </Atropos>
                   </div>
-                <Link to={artist.link}>
+                <Link to={`/artists/${artist.link}`}>
                   <button type="button" className="btn btn_see btn_artist_resp">
                     See works
                   </button>

@@ -7,7 +7,7 @@ import "animate.css/animate.min.css";
 import "./assets/css/style.scss";
 import "./assets/css/response.scss";
 import { RouterProvider } from "react-router-dom";
-import router from "./route";
+import router from "./routerConfig";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(

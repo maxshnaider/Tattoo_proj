@@ -1,7 +1,6 @@
-import terry_img from "../assets/img/artist_page_terry.png";
-import { Link } from "react-router-dom";
-import nick_gallery from "../data/nick_gallery.json";
-import ScrollToTop from "../assets/components/common/ScrollToTop";
+import { Link, useParams } from "react-router-dom";
+import { useEffect } from "react";
+import { useState } from "react";
 import artistsData from "../data/artists.json";
 import "atropos/css";
 import Atropos from "atropos/react";
@@ -11,15 +10,20 @@ import lgZoom from "lightgallery/plugins/zoom";
 import "lightgallery/css/lightgallery.css";
 import "lightgallery/css/lg-zoom.css";
 import "lightgallery/css/lg-thumbnail.css";
+import nick_gallery from "../data/nick_gallery.json";
 
-
-function TerryDutraPage() {
-  const terry = artistsData.find((artist) => artist.name === "Terry Dutra");
-
-  if (!terry) {
-    console.error("Artist not found.");
-    return null;
-  }
+function ArtistPage() {
+    const { artistName } = useParams();
+    const [artist, setArtist] = useState(null);
+  
+    useEffect(() => {
+      const artistData = artistsData.find((artist) => artist.link === artistName);
+      setArtist(artistData);
+    }, [artistName]);
+    
+    if (!artist) {
+      return <div>404</div>;
+     }
 
   return (
     <div className="nick_wrap">
@@ -29,25 +33,25 @@ function TerryDutraPage() {
             <div className="artist_page_item reverse">
               <div className="artist_page_info animate__animated animate__slideInRight">
                 <Atropos shadow={false} highlight={false}>
-                  <h2 className="title_h2">{terry.name}</h2>
+                  <h2 className="title_h2">{artist.name}</h2>
                 </Atropos>
-                <p className="text1">{terry.description1}</p>
-                <p className="text2">{terry.description2}</p>
-                <Link to={"/application"}>
+                <p className="text1">{artist.description1}</p>
+                <p className="text2">{artist.description2}</p>
+                <Link to="/application">
                   <button type="button" className="btn btn_long btn_nick">
                     Make an appointment
                   </button>
                 </Link>
               </div>
               <div className="artist_photo animate__animated animate__slideInLeft">
-                <img src={terry_img} alt="terry_master" />
+                <img src={`./assets/img/${artist.image}`} alt={`${artist.name}_master`} />
               </div>
             </div>
           </div>
           <div className="nick_gallery">
             <div className="container_1440">
               <div className="grid_gallery">
-              <LightGallery
+                <LightGallery
                   speed={500}
                   plugins={[lgThumbnail, lgZoom]}
                   thumbWidth={100}
@@ -66,22 +70,15 @@ function TerryDutraPage() {
                         />
                       </a>
                     );
-                  })}{" "}
+                  })}
                 </LightGallery>
               </div>
             </div>
           </div>
         </section>
       </main>
-      <ScrollToTop />
     </div>
   );
 }
 
-export default TerryDutraPage;
-
-
-
-
-
-
+export default ArtistPage; 
