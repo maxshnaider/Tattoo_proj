@@ -44,7 +44,7 @@ function ArtistPage() {
                 </Link>
               </div>
               <div className="artist_photo animate__animated animate__slideInLeft">
-                <img src={`./assets/img/${artist.image}`} alt={`${artist.name}_master`} />
+                <img src={`/assets/img/${artist.image}`} alt={`${artist.name}_master`} />
               </div>
             </div>
           </div>
@@ -61,11 +61,11 @@ function ArtistPage() {
                     return (
                       <a
                         key={index}
-                        href={`./assets/img/gallery/${el.src}`}
+                        href={`/assets/img/gallery/${el.src}`}
                         className="grid_item"
                       >
                         <img
-                          src={`./assets/img/gallery/${el.src}`}
+                          src={`/assets/img/gallery/${el.src}`}
                           alt="tattoo_item"
                         />
                       </a>

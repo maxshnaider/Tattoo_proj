@@ -16,7 +16,6 @@ function AboutUsPage() {
 
   return (
     <Parallax bgImage={bg_about} strength={500}>
-      {/* <Header /> */}
       <main>
         <section className="about_us_page">
           <div className="about_page_first container_1440">
@@ -91,7 +90,6 @@ function AboutUsPage() {
           </div>
         </section>
       </main>
-      {/* <FootMain /> */}
       <ScrollToTop />
     </Parallax>
   );

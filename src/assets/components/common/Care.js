@@ -51,7 +51,6 @@ function Care() {
             <Link to={"/error"}>
               <button type="button" className="btn btn_long">
                 Know more
-                {/* Know more<span className="icon-arrow-right2 know"></span> */}
               </button>
             </Link>
           </div>

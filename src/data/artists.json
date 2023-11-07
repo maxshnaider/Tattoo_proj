@@ -4,20 +4,23 @@
       "description1": "Terry has been tattooing and studying the principles and elements of the arts for more than 13 years and is among the best tattoo artists in and around Destin, Florida. Everyday is a new day and a new challenge.",
       "description2": "Nothing in life is cookie cut, so why should your tattoos be pre-shaped, or prefabbed. Every design from Destin's best tattoo artist, Terry Dutra, is unique and customized to the liking and wants of the client, and with a personal touch that can only be found at Custom Concepts. Terry always puts the focus on the client and the art they want to illustrate their ideas with.",
       "link": "terry",
-      "image": "artist_page_terry.png"
+      "image": "artist_page_terry.png",
+      "experience" : "15"
     },
     {
       "name": "Nick Holt",
       "description1": "Nick Holt, a local native to the emerald coast; who has been tattooing with Custom Concepts over 3 years now. Continues studying all elements of tattooing and art, he enjoys vibrant wild color schemes along with elements of Traditional, Neo traditional and new school styles of tattooing.",
       "description2": "Always wanting and willing to expand in his profession, he will tackle your next project. Book now for a consultation and come say \"Hi!\"",
       "link": "nick",
-      "image": "artist_page_nick.png"
+      "image": "artist_page_nick.png",
+      "experience" : "10"
     },
     {
       "name": "Sandra",
       "description1": "Sandra has been tattooing and studying the principles and elements of the arts for more than 7 years and is among the best tattoo artists in and around Destin, Florida. Everyday is a new day and a new challenge.",
       "description2": "Always wanting and willing to expand in his profession, he will tackle your next project. Book now for a consultation and come say \"Hi!\"",
       "link": "sandra",
-      "image": "artist_page_sandra.png"
+      "image": "artist_page_sandra.png",
+      "experience" : "5"
     }
   ]
