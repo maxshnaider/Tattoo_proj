@@ -1,5 +1,5 @@
-import ScrollToTop from "../assets/components/common/ScrollToTop";
-import FormPages from "../assets/components/FormPages";
+import ScrollToTop from "../components/common/ScrollToTop";
+import FormPages from "../components/FormPages";
 
 function Application() {
   return (

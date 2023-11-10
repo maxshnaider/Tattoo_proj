@@ -1,4 +1,4 @@
-import bg3 from "./../../img/bg_care.png";
+import bg3 from "../../assets/img/bg_care.png";
 import { Parallax } from "react-parallax";
 import Atropos from "atropos/react";
 import { Link } from "react-router-dom";

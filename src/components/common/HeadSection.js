@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import bg from "./../../img/bg_head.png";
+import bg from "../../assets/img/bg_head.png";
 import { Parallax } from "react-parallax";
 import Atropos from "atropos/react";
 

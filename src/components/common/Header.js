@@ -1,5 +1,5 @@
 import { Link, useLocation } from "react-router-dom";
-import logo from "./../../img/Logo.png";
+import logo from "../../assets/img/Logo.png";
 import Atropos from "atropos/react";
 import React, { useRef, useEffect } from "react";
 

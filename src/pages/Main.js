@@ -1,11 +1,11 @@
-import AboutUs from "../assets/components/common/AboutUs";
-import Care from "../assets/components/common/Care";
-import HeadSection from "../assets/components/common/HeadSection";
-import Reviews from "../assets/components/common/Reviews";
-import ContactsMap from "../assets/components/common/ContactsMap";
+import AboutUs from "../components/common/AboutUs";
+import Care from "../components/common/Care";
+import HeadSection from "../components/common/HeadSection";
+import Reviews from "../components/common/Reviews";
+import ContactsMap from "../components/common/ContactsMap";
 import { Parallax } from "react-parallax";
-import bg2 from "./../assets/img/bg2_3.png";
-import ArtistMain from "../assets/components/common/ArtistMain";
+import bg2 from "../assets/img/bg2_3.png";
+import ArtistMain from "../components/common/ArtistMain";
 function Main() {
   return (
     <main>

@@ -1,10 +1,10 @@
 import React from "react";
 import { Parallax } from "react-parallax";
 import "atropos/css";
-import ScrollToTop from "../assets/components/common/ScrollToTop";
-import bg_artist from "./../assets/img/bg_artists_page.png";
+import ScrollToTop from "../components/common/ScrollToTop";
+import bg_artist from "../assets/img/bg_artists_page.png";
 import artistsData from "../data/artists.json";
-import ArtistInfo from "../assets/components/ArtistInfo";
+import ArtistInfo from "../components/ArtistInfo";
 
 function Artists() {
   return (

@@ -1,9 +1,8 @@
 import React from "react";
 import { AnimationOnScroll } from "react-animation-on-scroll";
 import Slider from "react-slick";
-import artists from "../../../data/artists.json";
+import artists from "../../data/artists.json";
 import ArtistMainCard from "../ArtistMainCard";
-// import Atropos from "atropos";
 
 function ArtistMain() {
   const settings = {
@@ -37,11 +36,8 @@ function ArtistMain() {
       <AnimationOnScroll animateIn="animate__fadeInUp" animateOnce={true}>
         <div className="container artist">
           <h2 className="title_h2">
-            {/* <Atropos shadow={false} highlight={false} rotateTouch={false}> */}
               Our Artists
-            {/* </Atropos> */}
           </h2>
-
           <div className="artist_container">
             <Slider {...settings}>
               {artists.map((artist, index) => (

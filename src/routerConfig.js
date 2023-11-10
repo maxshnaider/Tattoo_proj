@@ -4,7 +4,7 @@ import Main from "./pages/Main";
 import AboutUsPage from "./pages/AboutUsPage";
 import Artists from "./pages/Artists";
 import Application from "./pages/Application";
-import ErrorPage from "./assets/components/ErrorPage";
+import ErrorPage from "./components/ErrorPage";
 import ReviewsPage from "./pages/ReviewsPage";
 import ArtistPage from "./pages/ArtistsPage";
 

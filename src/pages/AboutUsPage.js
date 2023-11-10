@@ -4,7 +4,7 @@ import img3 from "./../assets/img/about_us_gall3.png";
 import img4 from "./../assets/img/about_us_gall4.png";
 import custom_img from "../assets/img/Custom_Concepts.png";
 import tattoo_chair from "../assets/img/about_us_page_first.png";
-import ScrollToTop from "../assets/components/common/ScrollToTop";
+import ScrollToTop from "../components/common/ScrollToTop";
 import { Parallax } from "react-parallax";
 import bg_about from ".//../assets/img/bg_page_about_us.png";
 import { Link } from "react-router-dom";
