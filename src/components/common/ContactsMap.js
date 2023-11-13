@@ -3,7 +3,7 @@ import "leaflet-gesture-handling/dist/leaflet-gesture-handling.css";
 import "leaflet/dist/leaflet.css";
 import L from "leaflet";
 import Contacts from "../Contacts";
-import iconUrl from "./../../img/marker.svg";
+import iconUrl from "../../assets/img/marker.svg";
 
 function ContactsMap() {
   const customIcon = new L.Icon({

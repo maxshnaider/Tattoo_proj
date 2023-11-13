@@ -1,11 +1,11 @@
-import reviewsItems from "../../../data/reviewsItems.json";
+import reviewsItems from "../../data/reviewsItems.json";
 import ReviewsItem from "../ReviewsItem";
 import Slider from "react-slick";
 import React, { useEffect, useRef } from "react";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { Parallax } from "react-parallax";
-import bg4 from "./../../img/bg_reviews.png";
+import bg4 from "../../assets/img/bg_reviews.png";
 import Atropos from "atropos/react";
 import { AnimationOnScroll } from "react-animation-on-scroll";
 

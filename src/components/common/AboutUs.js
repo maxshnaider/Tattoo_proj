@@ -1,4 +1,4 @@
-import about_img from "../../img/about_us_main.png";
+import about_img from "../../assets/img/about_us_main.png";
 import { Link } from "react-router-dom";
 import React from "react";
 import LazyLoad from "react-lazy-load";

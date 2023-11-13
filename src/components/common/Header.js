@@ -1,5 +1,5 @@
 import { Link, useLocation } from "react-router-dom";
-import logo from "./../../img/Logo.png";
+import logo from "../../assets/img/Logo.png";
 import Atropos from "atropos/react";
 import React, { useRef, useEffect } from "react";
 
@@ -59,8 +59,6 @@ function Header() {
             </div>
             <ul className="nav">
               <li>
-                {/* <a href="/">Home</a> */}
-
                 <Link to={"/"} onClick={clickHandler}>
                   <Atropos shadow={false} highlight={false}>
                     Home
@@ -68,7 +66,6 @@ function Header() {
                 </Link>
               </li>
               <li>
-                {/* <a href="#">Artists</a> */}
                 <Link to="/artists" onClick={clickHandler}>
                   <Atropos shadow={false} highlight={false}>
                     Artists
@@ -76,7 +73,6 @@ function Header() {
                 </Link>
               </li>
               <li>
-                {/* <a href={"/about"}>About us</a> */}
                 <Link to={"/about"}>
                   <Atropos shadow={false} highlight={false}>
                     About us
@@ -121,19 +117,16 @@ function Header() {
             <div id="mobile_menu" ref={menuRef}>
               <ul className="nav_mobile">
                 <li>
-                  {/* <a href="/">Home</a> */}
                   <Link to={"/"} onClick={handleMenuClick}>
                     Home
                   </Link>
                 </li>
                 <li>
-                  {/* <a href="#">Artists</a> */}
                   <Link to={"/artists"} onClick={handleMenuClick}>
                     Artists
                   </Link>
                 </li>
                 <li>
-                  {/* <a href={"/about"}>About us</a> */}
                   <Link to={"/about"} onClick={handleMenuClick}>
                     About us
                   </Link>
