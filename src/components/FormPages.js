@@ -1,7 +1,7 @@
-import axios from "axios";
 import React, { useState } from "react";
 import { useEffect, useRef } from "react";
 import { nameCheck, nameError, phoneCheck, phoneError } from "../validations/validations";
+import { submitFeedback } from "../api/feedbackApi";
 
 function FormPages() {
   const [name, setName] = useState("");
@@ -52,25 +52,24 @@ function FormPages() {
   const handleSubmit = (e) => {
     e.preventDefault();
     if (nameErrorText === '' && phoneErrorText === '') {
-      submitFeedback();
-      setName('');
-      setPhone('');
-      setText('');
+      const data = {
+        name: name,
+        phone: phone,
+        text: text,
+      };
+
+      submitFeedback(data)
+        .then(() => {
+          setName('');
+          setPhone('');
+          setText('');
+        })
+        .catch(error => {
+          console.error('Error:', error);
+        });
     }
   };
-
-  function submitFeedback() {
-    const BOT_TOKEN = "6266955084:AAGMFQOZ4l14F_HFXdiWg3f2wW4GWEh1D8A";
-    const CHAT_ID = "-1001562545950";
-    const text = `${document.getElementById("name").value}
-  ${document.getElementById("comments").value}
- ${document.getElementById("phone").value}`;
-
-    axios.post(`https://api.telegram.org/bot${BOT_TOKEN}/sendMessage`, {
-      chat_id: CHAT_ID,
-      text: text,
-    });
-  }
+  
 
   return (
     <form
