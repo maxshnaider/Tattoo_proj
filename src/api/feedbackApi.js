@@ -5,8 +5,6 @@ const feedbackApi = axios.create({
 });
 
 export const submitFeedback = async (data) => {
-    console.log("dfsgsfdgsdf")
-
   try {
     const response = await feedbackApi.post(`/bot${process.env.REACT_APP_BOT_TOKEN}/sendMessage`, {
       chat_id: process.env.REACT_APP_CHAT_ID,
