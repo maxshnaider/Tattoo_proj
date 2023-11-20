@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import axios from 'axios';
+import { fetchReviews } from '../api/reviewsApi';
 
 function ReviewsPage() {
   const [comments, setComments] = useState([]);
@@ -7,14 +7,15 @@ function ReviewsPage() {
   useEffect(() => {
     const limit = 6;
 
-    axios.get(`https://dummyjson.com/comments?limit=${limit}`)
-      .then(response => {
-        setComments(response.data.comments);
-      })
-      .catch(error => {
-        console.error('Error fetching data:', error);
-      });
-  }, []);
+    fetchReviews(limit)
+    .then(data => {
+      setComments(data.comments);
+    })
+    .catch(error => {
+      console.error('Error fetching comments:', error);
+    });
+}, []);
+
 
   return (
     <div>
