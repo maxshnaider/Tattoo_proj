@@ -1,4 +1,6 @@
 import { MapContainer, TileLayer, Popup, Marker } from "react-leaflet";
+// eslint-disable-next-line no-unused-vars
+import { GestureHandling } from "leaflet-gesture-handling";
 import "leaflet-gesture-handling/dist/leaflet-gesture-handling.css";
 import "leaflet/dist/leaflet.css";
 import L from "leaflet";
