@@ -1,15 +1,23 @@
 import React, { useState } from "react";
 import { useEffect, useRef } from "react";
-import { nameCheck, nameError, phoneCheck, phoneError } from "../validations/validations";
+import { validations} from "../validations/validations";
 import { submitFeedback } from "../api/feedbackApi";
 
 function FormPages() {
-  const [name, setName] = useState("");
-  const [phone, setPhone] = useState("");
-  const [text, setText] = useState("");
-
   const [nameErrorText, setNameErrorText] = useState('');
   const [phoneErrorText, setPhoneErrorText] = useState('');
+  const [isFormValid, setIsFormValid] = useState(false);
+  
+  const [formFields, setFormFields] = useState({
+     userName: '',
+     phone: '',
+     comment: ''
+  })
+
+  const [formErrors, setFormErrors] = useState ({
+      userName: '',
+     phone: '',
+  })
 
   const formRef = useRef(null);
 
@@ -27,54 +35,60 @@ function FormPages() {
     };
   }, []);
 
-  const handleNameChange = (event) => {
-    const { value } = event.target;
-    setName(value);
-
-    if (!nameCheck.test(value)) {
-      setNameErrorText(nameError);
-    } else {
-      setNameErrorText('');
-    }
+  const handleInputChange = (event) => {
+    const { value, name} = event.target;
+    setFormFields((prev)=>{
+      return {
+        ...prev,
+        [name]: value
+      }
+    });
+  
   };
 
-  const handlePhoneChange = (event) => {
-    const { value } = event.target;
-    setPhone(value);
-
-    if (!phoneCheck.test(value)) {
-      setPhoneErrorText(phoneError);
-    } else {
-      setPhoneErrorText('');
+  const handleInputBlur = (event) => {
+    const { value, name} = event.target;
+    if (!value) {
+      return 
     }
-  };
+      setFormErrors((prev)=>({
+        ...prev,
+        [name]: !validations[name].rule.test(value) ? validations[name].error : ''
+        }
+      ));
+  }
 
   const handleSubmit = (e) => {
     e.preventDefault();
     if (nameErrorText === '' && phoneErrorText === '') {
       const data = {
-        name: name,
-        phone: phone,
-        text: text,
+        name: formFields.userName,
+        phone: formFields.phone,
+        text: formFields.comment
       };
 
       submitFeedback(data)
-        .then(() => {
-          setName('');
-          setPhone('');
-          setText('');
-        })
-        .catch(error => {
-          console.error('Error:', error);
-        });
-    }
+      .then(() => {
+        setFormFields((prev) => ({
+          ...prev,
+          userName: '',
+          phone: '',
+          comment: '',
+        }));
+      })
+      .catch(error => {
+        console.error('Error:', error);
+      });
+  }
   };
-  
+
+  useEffect(() => {
+    setIsFormValid(formErrors.userName === '' && formErrors.phone === '');
+  }, [formErrors]);
 
   return (
     <form
       noValidate
-      ref={formRef}
       onSubmit={handleSubmit}
       id="feedback_form"
       method="post"
@@ -82,19 +96,20 @@ function FormPages() {
       encType="multipart/form-data"
       className="form_flex"
     >
-      {nameErrorText && <p className="error">{nameErrorText}</p>}
+      {formErrors.userName && <p className="error">{formErrors.userName}</p>}
       <div className="form_row">
         <label htmlFor="name">Name:</label>
         <br />
         <input
           type="text"
-          name="name"
+          name="userName"
           id="name"
-          value={name}
-          onChange={handleNameChange}
+          value={formFields.userName}
+          onChange={handleInputChange}
+          onBlur={handleInputBlur}
         />
       </div>
-      {phoneErrorText && <p className="error">{phoneErrorText}</p>}
+      {formErrors.phone && <p className="error">{formErrors.phone}</p>}
       <div className="form_row">
         <label htmlFor="phone">Phone:</label>
         <br />
@@ -102,21 +117,27 @@ function FormPages() {
           type="text"
           name="phone"
           id="phone"
-          value={phone}
-          onChange={handlePhoneChange}
+          value={formFields.phone}
+          onChange={handleInputChange}
+          onBlur={handleInputBlur}
         />
       </div>
       <div className="form_row">
-        <label htmlFor="comments">Comments:</label> <br />
+        <label htmlFor="comment">Comments:</label> <br />
         <textarea
           type="text"
-          name="comments"
-          id="comments"
-          value={text}
-          onChange={(e) => setText(e.target.value)}
+          name="comment"
+          id="comment"
+          value={formFields.comment}
+          onChange={handleInputChange}
         ></textarea>
       </div>
-      <button id="feedback_submit" type="submit" className="btn btn_foot">
+      <button
+        id="feedback_submit"
+        type="submit"
+        className={`btn btn_foot ${isFormValid ? "" : "disabled"}`}
+        disabled={!isFormValid}
+      >
         Send form
       </button>
     </form>
