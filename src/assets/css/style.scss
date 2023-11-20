@@ -667,6 +667,11 @@ footer {
 .btn_foot {
   width: 445px;
 }
+
+.btn_foot.disabled {
+  background-color: #878383; 
+    // cursor: not-allowed;
+}
 .text_area_app {
   height: 96px !important;
 }
