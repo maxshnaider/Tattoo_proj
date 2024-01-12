@@ -9,8 +9,8 @@ function FootMain() {
             <div className="shop_ours">
               <h3 className="title_h3">Tattoo Shop Hours:</h3>
               <div className="circle"></div>
-              <p>Sunday -Thursday 1pm - 9pm</p>
-              <p>​Friday & Saturday 1pm - Until Close</p>
+              <p>Monday - Friday 1pm - 9pm</p>
+              <p>​Saturday & Sunday 1pm - Until Close</p>
             </div>
             <div className="foot_form_input">
               <h3 className="title_h3">Application</h3>
@@ -19,21 +19,21 @@ function FootMain() {
             </div>
           </div>
           <div className="foot_right">
-            <h3 className="title_h3">Custom Concepts Tattoo</h3>
+            <h3 className="title_h3">Art Collective</h3>
             <div className="circle"></div>
             <div className="adress">
-              11394 US-98 Unit I, Miramar Beach,
+              18985 UQ-51 Unit I, Miami Beach,
               <br />
-              FL 32550
+              BR 459653 
               <br />
-              Next to the Melting Pot
+              Next to the Subway St.
             </div>
             <div className="phone_contact">
-              <a href="tel:+001356-868-2454">+001 356-868-2454</a>
+              <a href="tel:+001356-868-2454">+007 485-45-45</a>
             </div>
             <div className="email_contact">
               <a href="mailto:destintattoo@gmail.com">
-                Email: destintattoo@gmail.com
+                Email: tattoo007@tattoo.com
               </a>
             </div>
             <div className="follow_us">

@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import bg from "../../assets/img/bg_head.png";
+import bg from "../../assets/img/pexels.jpg";
 import { Parallax } from "react-parallax";
 import Atropos from "atropos/react";
 
@@ -10,7 +10,7 @@ function HeadSection() {
         <div className="container">
           <h1>
             <Atropos shadow={false} highlight={false} rotateTouch={true}>
-              Custom Concepts <br /> Tattoo and Design
+            Art Collective <br /> Tattoo and Design
             </Atropos>
           </h1>
 

@@ -21,12 +21,7 @@ function AboutUs() {
               </Atropos>
 
               <p>
-                Custom Concepts is ready to design, develop and tattoo your
-                first, or next tattoo. Shop owner and Head Artist, Terry Dutra,
-                has honed his craft over the last 17 years providing tattoos in
-                Ft Walton, Destin and surrounding areas, and he is ready to make
-                your next big tattoo idea a reality! Of course, walk-ins are
-                welcome and our friendly staff of full time...
+              Custom Visions is set to design, develop, and tattoo your first or next tattoo. Terry Green, the owner and Head Artist, has refined his craft over 13 years, providing tattoos in Ft Walton, Destin, and nearby areas, ready to bring your next big tattoo idea to life! Walk-ins are welcome, and our friendly full-time staff is on standby to help you get inked at almost any time. So, no matter what you're looking for or how close you are to your final idea...
               </p>
 
               <Link to={"/about"}>

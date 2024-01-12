@@ -82,7 +82,7 @@ function Header() {
               <li>
                 <Link to={"/error"}>
                   <Atropos shadow={false} highlight={false}>
-                    Care
+                    Blog
                   </Atropos>
                 </Link>
               </li>
@@ -133,7 +133,7 @@ function Header() {
                 </li>
                 <li>
                   <Link to={"/error"} onClick={handleMenuClick}>
-                    Care
+                    Blog
                   </Link>
                 </li>
                 <li>

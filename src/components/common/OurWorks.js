@@ -1,5 +1,5 @@
 import reviewsItems from "../../data/reviewsItems.json";
-import ReviewsItem from "../ReviewsItem";
+import OurWorksItem from "../OurWorksItem";
 import Slider from "react-slick";
 import React, { useEffect, useRef } from "react";
 import "slick-carousel/slick/slick.css";
@@ -9,7 +9,7 @@ import bg4 from "../../assets/img/bg_reviews.png";
 import Atropos from "atropos/react";
 import { AnimationOnScroll } from "react-animation-on-scroll";
 
-function Reviews() {
+function OurWorks() {
   const sliderRef = useRef(null);
 
   useEffect(() => {
@@ -55,14 +55,14 @@ function Reviews() {
           <div className="container">
             <h2 className="title_h2 title_reviews">
               <Atropos shadow={false} highlight={false} rotateTouch={false}>
-                Our Reviews
+                Our works
               </Atropos>
             </h2>
 
             <div className="reviews_slider">
               <Slider ref={sliderRef} {...settings}>
                 {reviewsItems.map((item, index) => (
-                  <ReviewsItem img={item.img} title={item.title} key={index} />
+                  <OurWorksItem img={item.img} key={index} />
                 ))}
               </Slider>
             </div>
@@ -73,4 +73,4 @@ function Reviews() {
   );
 }
 
-export default Reviews;
+export default OurWorks;

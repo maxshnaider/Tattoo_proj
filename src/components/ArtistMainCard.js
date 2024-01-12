@@ -2,7 +2,7 @@ import React from "react";
 import Atropos from "atropos/react";
 import { Link } from "react-router-dom";
 
-function ArtistMainCard({ name, experience, link }) {
+function ArtistMainCard({ name,link }) {
   return (
     <div className="artist_item">
       <Atropos shadow={false} highlight={false} rotateTouch={false}>
@@ -16,7 +16,6 @@ function ArtistMainCard({ name, experience, link }) {
         </div>
       </Atropos>
       <h3 className="title_h3">{name}</h3>
-      <p>Work experience: {experience} years</p>
     </div>
   );
 }
