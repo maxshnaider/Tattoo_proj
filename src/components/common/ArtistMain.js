@@ -41,7 +41,7 @@ function ArtistMain() {
           <div className="artist_container">
             <Slider {...settings}>
               {artists.map((artist, index) => (
-                <ArtistMainCard key={index} name={artist.name} experience={artist.experience} link={artist.link} />
+                <ArtistMainCard key={index} name={artist.name} link={artist.link} />
               ))}
             </Slider>
           </div>

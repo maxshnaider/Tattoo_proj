@@ -1,7 +1,7 @@
 import React from "react";
 import LazyLoad from "react-lazy-load";
 
-function reviewsItem(props) {
+function OurWorksItem(props) {
   const { img, title } = props;
   return (
     <div className="reviews_item">
@@ -15,4 +15,4 @@ function reviewsItem(props) {
   );
 }
 
-export default reviewsItem;
+export default OurWorksItem;

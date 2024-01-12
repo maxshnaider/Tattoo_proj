@@ -18,7 +18,7 @@ function ContactsMap() {
     <section className="map">
       <div id="map">
         <MapContainer
-          center={[37.733342553128155, -122.38638130100634]}
+          center={[37.733342553128155, -122.38638130100699]}
           zoom={15}
           scrollWheelZoom={true}
           gestureHandling={true}
@@ -28,7 +28,7 @@ function ContactsMap() {
             url="https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x}/{y}.png"
           />
           <Marker
-            position={[37.73342553128155, -122.38638130100634]}
+            position={[37.73342553128155, -122.38638130100699]}
             icon={customIcon}
           >
             <Popup>Tattoo studio</Popup>

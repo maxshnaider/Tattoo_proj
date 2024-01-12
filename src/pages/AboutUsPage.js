@@ -33,13 +33,7 @@ function AboutUsPage() {
               animateOnce={true}
             >
               <div className="firts_text">
-                Known to thousands of clients in the Southeast as one of "the
-                Best tTattoo shops in Destin, FL ". Custom Concepts is ready to
-                design, develop and tattoo your first, or next tattoo. Shop
-                owner and Head Artist, Terry Dutra, has honed his craft over the
-                last 17 years providing tattoos in Ft Walton, Destin and
-                surrounding areas, and he is ready to make your next big tattoo
-                idea a reality!
+              Renowned among Southeastern clients as a top-tier tattoo haven in Destin, Florida, Custom Ink Studios is primed to breathe life into your inaugural or subsequent tattoo vision. Terry Green, the visionary owner and Head Artist, has finely honed his craft over 13 years, leaving indelible marks in Ft Walton, Destin, and nearby areas. Eager to transform your next tattoo idea into a personalized masterpiece!
               </div>
             </AnimationOnScroll>
             <AnimationOnScroll
@@ -47,13 +41,7 @@ function AboutUsPage() {
               animateOnce={true}
             >
               <div className="second_text">
-                Of course, walk-ins are welcome and our friendly staff of full
-                time, in-house artists are standing by to help you get inked at
-                nearly any time of day or night. So no matter what you're
-                looking for, no matter how close you are to your final idea or
-                design, you can book a free consultation with Custom Concepts to
-                learn more about our Destin tattoo shop, the artists, and how we
-                can help you with your tattoo.
+              Certainly, walk-ins are welcomed, and our cordial team of full-time, in-house artists is poised to guide you through the tattooing process at nearly any hour. Whether you're refining your design or set on a specific idea, book a free consultation with Custom Ink Studios to delve into our unique Destin tattoo studio, meet our artists, and explore how we can make your tattoo vision a reality.
               </div>
             </AnimationOnScroll>
           </div>

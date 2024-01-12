@@ -83,7 +83,7 @@ a {
   color: #ffffff;
 }
 .nav a:hover {
-  color: #00faeb;
+  color: #EDC518;
   font-weight: bold;
 }
 
@@ -103,7 +103,7 @@ a {
 
 .head_section {
   height: 800px;
-  background: url(../img/bg_head.png) center center/cover no-repeat;
+  /* background: url(../img/bg_head.png) center center/cover no-repeat; */
 }
 .head_section h1 {
   font-family: "Permanent Marker";

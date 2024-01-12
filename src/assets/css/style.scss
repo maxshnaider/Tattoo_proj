@@ -91,6 +91,7 @@ a {
 }
 
 .header_top {
+  background-color: rgb(240, 217, 115, 0.7);
   height: 64px;
   transition: all 0.5s ease;
   position: fixed;
@@ -128,7 +129,8 @@ a {
     @include coming_18px;
   }
   a:hover {
-    color: #00faeb;
+    // color: #EDC518;
+    transform: scale(1.2);
     font-weight: bold;
   }
   display: flex;
@@ -138,7 +140,7 @@ a {
 .btn {
   width: 255px;
   height: 48px;
-  background-color: #86cdd4;
+  background-color: #F0D973;
   border: none;
   border-radius: 5px;
   @include btn;
@@ -165,7 +167,7 @@ a {
   }
 
   .btn_head:hover {
-    background-color: #20c8d9;
+    background-color: #EDC518;
   }
 
   .btn_head {
@@ -174,11 +176,11 @@ a {
 
   .icons_contact {
     li a {
-      color: #00faeb;
+      color: #F0D973;
       font-size: 22px;
     }
     li a:hover {
-      color: #00988f;
+      color: #EDC518;
     }
     display: flex;
     width: 120px;
@@ -215,7 +217,7 @@ a {
     @include coming_18px;
   }
   .book_text:hover {
-    color: #00faeb;
+    color: #EDC518;
   }
   .icon-arrow-right2 {
     color: white;
@@ -410,11 +412,11 @@ footer {
       margin-right: 10px;
     }
     a {
-      color: #00faeb;
+      color: #F0D973;
       font-size: 22px;
     }
     a:hover {
-      color: #00988f;
+      color: #EDC518;
     }
   }
 }
