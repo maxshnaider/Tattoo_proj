@@ -4,8 +4,6 @@ import Slider from "react-slick";
 import React, { useEffect, useRef } from "react";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import { Parallax } from "react-parallax";
-import bg4 from "../../assets/img/bg_reviews.png";
 import Atropos from "atropos/react";
 import { AnimationOnScroll } from "react-animation-on-scroll";
 
@@ -49,7 +47,6 @@ function OurWorks() {
     ],
   };
   return (
-    <Parallax bgImage={bg4} strength={300}>
       <section className="reviews" id="reviews">
         <AnimationOnScroll animateIn="animate__fadeInUp" animateOnce={true}>
           <div className="container">
@@ -69,7 +66,6 @@ function OurWorks() {
           </div>
         </AnimationOnScroll>
       </section>
-    </Parallax>
   );
 }
 
